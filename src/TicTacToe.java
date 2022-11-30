@@ -190,6 +190,14 @@ public class TicTacToe {
     }
 
     private static void startGame01() {
+
+        gameBoard = new String[9];
+        turn = "X";
+
+        for (int i = 0; i < 9; i++) {
+            gameBoard[i] = String.valueOf(i + 1);
+        }
+
         showGameBoard();
     }
 
